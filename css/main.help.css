@@ -1,0 +1,94 @@
+.help {
+    padding: 175px 0;
+    text-align: center;
+}
+
+.help .accordion {
+    padding-top: 68px;
+    width: 50%;
+    margin: auto;
+}
+
+.help .accordion-item {
+    margin-bottom: 17px;
+    padding: 25px;
+    text-align: left;
+    border-bottom: 1px solid #D8E3FE;
+}
+
+.help .accordion-item img {
+    width: 14px;
+    height: 7px;
+    display: inline-block;
+}
+
+.help .accordion-item .visible {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.help .accordion-item h6 {
+    display: inline-block;
+    margin-left: 24px;
+}
+
+.accordion-item .hidden {
+    display: flex;
+    align-items: center;
+    padding: 17px 0 33px 41px;
+}
+
+.help .accordion-item .hidden p {
+    margin-right: 62px;
+}
+
+.help .accordion-item .documentation-button a {
+    text-decoration: none;
+    padding: 13px 25px;
+    display: inline-block;
+    border-radius: 2px;
+    font-size: 14px;
+    background-color: #E8ECF4;
+    color: #7382A3;
+    width: max-content;
+}
+
+.help .accordion-item .documentation-button a:hover {
+    transform: scale(0.97);
+    transition-duration: 0.3s;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+    .help .accordion {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .help .accordion {
+        width: 70%;
+    }
+}
+
+@media (max-width: 840px) {
+    .help .accordion {
+        width: 80%;
+    }
+    .help {
+        padding: 125px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .accordion-item .hidden {
+        flex-wrap: wrap;
+    }
+    .help .accordion-item .documentation-button a {
+        margin-top: 20px;
+    }
+}

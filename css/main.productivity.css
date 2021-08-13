@@ -1,0 +1,31 @@
+.increase-productivity {
+    text-align: center;
+    background: url(../assets/backgrounds/increase.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 91px 0 282px;
+}
+
+.increase-productivity > p {
+    width: 33%;
+    margin: auto;
+}
+
+@media (max-width: 845px) {
+    .increase-productivity > p {
+        width: 50%;
+    }
+}
+
+@media (max-width: 760px) {
+    .increase-productivity {
+        padding: 91px 20px 220px;
+        background-position: 30%;
+    }
+}
+
+@media (max-width: 580px) {
+    .increase-productivity > p {
+        width: 80%;
+    }
+}

@@ -1,0 +1,101 @@
+.app {
+    background-color: hsl(222, 100%, 98%);
+    padding: 172px 0;
+}
+.app-wrapper {
+    width: 80%;
+    margin-left: 15%;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.app-description {
+    flex-basis: 33%;
+    margin-right: 20px;
+}
+
+.app-buttons {
+    display: flex;
+    margin-top: 67px;
+}
+
+.app-buttons > div > a {
+    padding: 13px 25px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.view-video a {
+    background-color: #4C85FF;
+    border: 1px solid #4C85FF;
+    border-radius: 2px;
+    color: white;
+}
+
+.view-video a::after {
+    content: "";
+    display: inline-block;
+    background: url(../assets/app/triangle.svg);
+    width: 7px;
+    height: 8px;
+    margin-left: 6px;
+}
+
+.see-features a {
+    border: 1px solid #ADB4D2;
+    border-radius: 2px;
+    color: #ADB4D2;
+}
+
+.see-features a:hover, .view-video a:hover {
+    transform: scale(0.97);
+    transition-duration: 0.3s;
+}
+
+.app-previews {
+    flex-basis: 67%;
+    height: 35vw;
+    background: no-repeat url(../assets/app/illustration.png);
+    background-size: 100%;
+}
+
+@media (max-width: 1130px) {
+    .app-wrapper {
+        width: 85%;
+        margin: auto;
+    }
+    .app-description, .app-previews {
+        flex-basis: 50%;
+    }
+    .app-previews {
+        height: 30vw;
+    }
+}
+
+@media (max-width: 990px) {
+    .app {
+        padding: 122px 0;
+    }
+}
+
+@media (max-width: 770px) {
+    .app-wrapper {
+        flex-wrap: wrap;
+    }
+    .app-description, .app-previews {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .app-description{
+        margin-right: 0;
+    }
+    .app-previews {
+        margin-top: 60px;
+        height: 60vw;
+    }
+    .app-buttons {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,80 @@
+footer {
+    padding: 118px 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #D8E3FE;
+}
+
+footer > div:first-child {
+    flex-basis: 35%;
+    margin-right: 30px;
+}
+
+footer h5 {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+footer input, .save-me a {
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+footer input {
+    width: 280px;
+    padding: 22px;
+    background-color: #EFEFF7;
+    margin-right: 14px;
+}
+
+footer input::placeholder {
+    color: #7A85AD;
+}
+
+.save-me {
+    display: inline-block;
+}
+
+.save-me a {
+    text-decoration: none;
+    padding: 20px 62px;
+    background-color: #4D6CE1;
+    color: white;
+}
+
+.save-me:hover {
+    transform: scale(0.97);
+    transition-duration: 0.3s;
+}
+
+@media (max-width: 1132px) {
+    footer {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    footer > div:first-child, footer > div:last-child {
+        flex-basis: 100%;
+    }
+    footer > div:first-child {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    footer {
+        padding: 98px 8%;
+    }
+}
+
+@media (max-width: 574px) {
+    footer input, .save-me {
+        width: 100%;
+    }
+    .save-me a {
+        display: block;
+        margin-top: 10px;
+    }
+}

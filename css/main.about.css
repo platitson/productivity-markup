@@ -1,0 +1,126 @@
+.about {
+    background: url(../assets/about/clouds.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 171px 0;
+    text-align: center;
+}
+
+.about-wrapper {
+    width: 60%;
+    margin: 92px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-item {
+    flex-basis: 22%;
+}
+
+.about-wrapper a {
+    text-decoration: none;
+}
+
+.about-wrapper a img:hover {
+    filter: drop-shadow(0 5px 0 grey);
+    transition-duration: 0.3s;
+}
+
+.about-wrapper h5 {
+    margin: 33px 0 25px;
+}
+
+.about-wrapper p {
+    font-size: 14px;
+    color: #ADB3CB;
+}
+
+.about-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-buttons a {
+    text-decoration: none;
+    padding: 13px 25px;
+    display: inline-block;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.about-buttons .read-more a {
+    background-color: #FFD7D7;
+    color: #D43F3F;
+}
+
+.about-buttons .get-started a {
+    background-color: #D2E1FF;
+    color: #3A79FF;
+}
+
+.about-buttons .get-started a:hover, .about-buttons .read-more a:hover  {
+    transform: scale(0.97);
+    transition-duration: 0.3s;
+}
+
+.about-buttons p {
+    color: #ADB3CB;
+}
+
+.about-buttons p::before, .about-buttons p::after {
+    content: "";
+    display: inline-block;
+    background-color: #DAE4FE;
+    width: 15px;
+    height: 2px;
+    margin: 0 17px;
+    vertical-align: middle;
+}
+
+@media (max-width: 1135px) {
+    .about-wrapper {
+        flex-wrap: wrap;
+    }
+    .about-item {
+        flex-basis: 45%;
+        margin: 25px 0;
+    }
+}
+
+@media (max-width: 860px) {
+    .about {
+        background-repeat: repeat;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-buttons {
+        flex-direction: column;
+    }
+    .about-buttons p {
+        margin: 20px 0;
+    }
+    .about {
+        padding: 121px 0;
+    }
+}
+
+@media (max-width: 505px) {
+    .about-item {
+        flex-basis: 100%;
+    }
+    .about-wrapper {
+    margin: 62px auto;
+    }
+}
+
+@media (max-width: 445px) {
+    .about {
+        padding: 81px 0;
+    }
+    .about-wrapper {
+        margin: 42px auto;
+        }
+}

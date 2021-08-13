@@ -1,0 +1,224 @@
+.resources {
+    background-color: #F5F8FF;
+    padding: 104px 0;
+    text-align: center;
+}
+
+.resources h3 {
+    margin-bottom: 92px;
+}
+
+.resources .carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.resources .carousel-item {
+    padding: 64px 35px;
+    background-color: white;
+    border: 1px solid #D8E3FE;
+    width: 66%;
+    position: absolute;
+    top: 0;
+    left: 17%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
+}
+
+.resources .carousel-item.active {
+    z-index: 2;
+    opacity: 1;
+    position: relative;
+}
+
+.resources .carousel-item.prev {
+    transform: translateX(-100%);
+  }
+  
+.resources .carousel-item.next {
+    transform: translateX(100%);
+}
+
+.carousel-indicators {
+    margin-top: 101px;
+}
+
+.carousel-indicators .carousel-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #D1D6E3;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.carousel-indicators li.active {
+    background-color: #5283FF;
+}
+
+.carousel-button-next, .carousel-button-prev {
+    position: absolute;
+    top: 40%;
+    width: 23px;
+    height: 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.carousel-button-next:active, .carousel-button-prev:active {
+    transform: scale(0.9);
+}
+
+.carousel-button-prev {
+    left: 100px;
+    background: url(../assets/resources/arrowback.png);
+    background-position: center;
+    background-size: cover;
+}
+  
+.carousel-button-next {
+    right: 100px;
+    background: url(../assets/resources/arrowforward.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.resources .carousel-item .article-pics {
+    width: 46%;
+    display: flex;
+    justify-content: space-between;
+    height: 270px;
+}
+
+.main-article-pic {
+    background: url(../assets/resources/blog1.png);
+    background-position: center;
+    background-size: cover;
+    flex-basis: 65%;
+    border-radius: 3px;
+}
+
+.secondary-article-pics {
+    flex-basis: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.secondary-article-pics div:first-child {
+    flex-basis: 48%;
+    background: url(../assets/resources/blog2.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.secondary-article-pics div:last-child {
+    flex-basis: 48%;
+    background: url(../assets/resources/blog3.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.resources .carousel-item .article-preamble {
+    text-align: left;
+    width: 46%;
+}
+
+.read-now a {
+    text-decoration: none;
+    padding: 13px 25px;
+    margin-top: 31px;
+    display: inline-block;
+    border-radius: 2px;
+    font-weight: 700;
+    background-color: #D2E1FF;
+    color: #3A79FF;
+}
+
+.read-now a:hover  {
+    transform: scale(0.97);
+    transition-duration: 0.3s;
+}
+
+@media (max-width: 1080px) {
+    .article-preamble h2 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    .resources .carousel-item {
+        flex-direction: column;
+    }
+    .resources .carousel-item .article-pics {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .main-article-pic {
+        flex-basis: 32%;
+    }
+    .secondary-article-pics {
+        flex-basis: 65%;
+        flex-direction: row;
+    }
+    .resources .carousel-item .article-pics {
+        height: 135px;
+    }
+    .resources .carousel-item .article-preamble {
+        text-align: center;
+    width: 80%;
+    }
+}
+
+@media (max-width: 900px) {
+    .resources .carousel-item .article-preamble, .resources .carousel-item .article-pics {
+        width: 90%;
+    }
+    .resources .carousel-item {
+        padding: 35px 15px;
+    }
+    .resources h3 {
+        margin-bottom: 50px;
+    }
+    .resources .carousel-item {
+        width: 74%;
+        left: 13%;
+    }
+    .carousel-indicators {
+        margin-top: 50px;
+    }
+    .carousel-button-prev {
+        left: 30px;
+    }
+    .carousel-button-next {
+        right: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .resources .carousel-item .article-pics {
+        height: 70px;
+    }
+}
+
+@media (max-width: 500px) {
+    .article-preamble p {
+        white-space: nowrap;
+    overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .article-preamble h2 {
+        font-size: 22px;
+    }
+    .carousel-button-prev {
+        left: 20px;
+    }
+    .carousel-button-next {
+        right: 20px;
+    }
+}
